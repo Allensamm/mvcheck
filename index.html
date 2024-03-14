@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>movie check</title>
+    <link rel="shortcut icon" href="./public/logo.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <section class="banner">
+      <nav>
+        <img src="./public/logo.png" alt="" class="logo" />
+        <input type="search" name="" id="search" />
+        <div class="account"></div>
+        <a href="./register/register.html" class="register">Register</a>
+      </nav>
+    </section>
+
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="">following</a></li>
+        </ul>
+        <ul>
+          <li><a href="">friends</a></li>
+        </ul>
+        <ul>
+          <li><a href="">LIVE</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="modal--section">
+      <section class="modal hidden">
+        <div class="flex">
+          <button class="btn-close">⨉</button>
+        </div>
+        <div>
+          <h3 class="movietitle"></h3>
+          <img class="movieposter" src="" alt="alternatively" />
+        </div>
+        <div class="comment--section">
+           
+        </div>
+
+        <div class="comment--text" contenteditable="true" style="background-color:#eee; outline: none; border-radius: 20px; padding: 10px 20px; height: 30px;">
+        </div>
+        <button class="post--comment">post</button>
+      </section>
+    </section>
+
+    <div class="overlay hidden"></div>
+
+    <section id="movie-container" class="movie-container">
+      <div id="loading">Loading...</div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

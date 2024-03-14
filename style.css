@@ -1,0 +1,267 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: "Arial", sans-serif;
+}
+
+.banner {
+  border-bottom: 1px solid white;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+.banner nav {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 36px;
+  background: black;
+}
+
+.banner nav img {
+  width: 100px;
+}
+
+.banner input {
+  width: 40%;
+  height: 40px;
+  outline: none;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 0 10px;
+  background: #262626;
+  color: white;
+}
+.banner input::-webkit-search-cancel-button {
+  appearance: none;
+}
+.logo {
+  width: 40px !important;
+  /* height: 100px; */
+}
+.account {
+  color: white;
+}
+.register {
+  background: #262626;
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.username {
+  color: white;
+  background: #007fd2;
+  border-radius: 50%;
+  width: 40px;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  margin-top: 90px; 
+}
+aside nav {
+  margin-top: 100px;
+}
+aside nav ul li a {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+}
+
+.movie-card {
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin: auto;
+}
+
+.movie-card-cover {
+  display: flex;
+  max-width: 400px;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  border-radius: 26px;
+  height: fit-content;
+  width: fit-content;
+  /* margin-left: -20px; */
+}
+.activity img {
+  width: 30px;
+}
+.activity button {
+  width: 40px;
+  height: 40px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.button--cover {
+  display: flex;
+  align-items: center;
+}
+
+.flex-flex {
+  display: flex;
+  gap: 20px;
+}
+.counts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+  gap: 40px;
+}
+.count {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+
+.modal--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  z-index: 2;
+}
+.modal {
+  width: 450px;
+  padding: 2.3rem;
+  position: absolute;
+  top: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow-x: scroll;
+  height: 80vh;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal textarea {
+  padding-bottom: 100px;
+  outline: none;
+  border: 1px solid #eee;
+}
+
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  background: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.commentdiv {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.user--commenting {
+  font-weight: 700;
+}
+.commentsection--inner {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.movieposter {
+  width: 120px;
+}
+
+
+
+@media screen and (max-width:768px) {
+  aside{
+    display: none;
+  }
+  body{
+    display: none;
+  }
+ 
+}
