@@ -77,8 +77,6 @@ async function showMovies(page = 1) {
           <h2>${movie.title}</h2>
           <p>Release Date: ${movie.release_date}</p>
           <p class='overview'>${movie.overview}</p>
-          <p>Popularity: ${movie.popularity}</p>
-          <p>Vote Average: ${movie.vote_average}</p>
         </div>
 
         <div class='flex-flex'>
