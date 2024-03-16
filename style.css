@@ -161,7 +161,7 @@ aside nav ul li a {
 }
 .modal {
   width: 450px;
-  padding: 2.3rem;
+  padding: 2rem;
   position: absolute;
   top: 20%;
   background-color: white;
@@ -260,8 +260,18 @@ button {
   aside{
     display: none;
   }
-  body{
-    display: none;
-  }
- 
+ .activity{
+  margin-left: -130px;
+  width: 30px;
+ }
+ .activity img{
+  width: 20px;
+  margin-left: -20px;
+ }
+ .activity button{
+  display: flex;
+ }
+ .modal{
+  width: 100%;
+ }
 }
